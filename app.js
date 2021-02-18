@@ -11,6 +11,7 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
+var wallr = require('./routes/createwall.html');
 
 var app = express();
 
@@ -28,8 +29,14 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-//new
+
+//routes
 //app.get("/user/:id", user.view);
+//app.get("/views/createwall.html");
+//app.get('/views/createwall.html');
+//example: app.get("someurl/:someid, controller.get_action");
+app.get('/', wallr.view);
+
 
 // development only
 if ('development' == app.get('env')) {
