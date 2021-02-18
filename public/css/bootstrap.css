@@ -788,6 +788,7 @@ pre code {
   margin-left: auto;
 }
 
+
 .container:before,
 .container:after {
   display: table;
@@ -5273,6 +5274,7 @@ a.list-group-item.active > .badge,
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
+  text-align: center;
 }
 
 .thumbnail > img,
