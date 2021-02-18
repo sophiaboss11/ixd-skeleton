@@ -28,6 +28,8 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+//new
+//app.get("/user/:id", user.view);
 
 // development only
 if ('development' == app.get('env')) {
