@@ -2,3 +2,68 @@
 
 @media (max-width: 375px){
 }
+
+.site-header-outer {
+    position: absolute;
+	width: 375px;
+	height: 64px;
+	left: 0px;
+	top: 44px;
+	background-color: #E0E0E0;
+	text-align: center
+/*	font-family: SF Pro Text;*/
+}
+.site-header-inner {
+    position: absolute;
+	width: 376px;
+	height: 48px;
+	left: 0px;
+	top: 108px;
+	background-color: #eeeeee;
+}
+
+.save-button{
+/* Buttons/save */
+
+position: absolute;
+width: 65px;
+height: 40px;
+left: 295px;
+top: 56px;
+
+
+
+/* Rectangle 30 */
+
+position: absolute;
+width: 65px;
+height: 40px;
+left: 295px;
+top: 56px;
+
+background: #FFFFFF;
+border-radius: 32px;
+
+
+/* Save */
+
+position: absolute;
+width: 33px;
+height: 20px;
+left: 311px;
+top: 66px;
+
+font-family: SF Pro Text;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+letter-spacing: -0.24px;
+
+color: #000000;
+
+
+}
+
+

@@ -11,7 +11,7 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
-var wallr = require('./routes/createwall.html');
+//var wallr = require('createwall');
 
 var app = express();
 
@@ -35,15 +35,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.get("/views/createwall.html");
 //app.get('/views/createwall.html');
 //example: app.get("someurl/:someid, controller.get_action");
-app.get('/', wallr.view);
+//app.get('/', index.view);
 
+app.get('/', function(req, res) {
+    res.render('index');
+});
+
+app.get('/createwall', function(req, res) {
+    res.render('createwall');
+});
 
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+
 // Example route
 // app.get('/users', user.list);
 
