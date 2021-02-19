@@ -45,6 +45,22 @@ app.get('/createwall', function(req, res) {
     res.render('createwall');
 });
 
+app.get('/community', function(req, res) {
+    res.render('community');
+});
+
+app.get('/gallery', function(req, res) {
+    res.render('gallery');
+});
+
+app.get('/tutorial', function(req, res) {
+    res.render('tutorial');
+});
+
+app.get('/settings', function(req, res) {
+    res.render('settings');
+});
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());

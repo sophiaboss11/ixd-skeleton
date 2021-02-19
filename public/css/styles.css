@@ -2,7 +2,27 @@
 
 @media (max-width: 375px){
 }
+/*374 x 667*/
 
+/*format*/
+.bg{
+/*	background-color: lightyellow;*/
+	width: 375px
+}
+.sticky-pals-container{
+	position: relative;
+	width: 375px;
+	height: 812px;
+	background: #FFFFFF;
+}
+
+.sticky-pals-jumbotron{
+	position: absolute;
+	width: 308px;
+	height: 224px;
+	left: 33px;
+	top: 72px;
+}
 .site-header-outer {
     position: absolute;
 	width: 375px;
@@ -13,6 +33,7 @@
 	text-align: center
 /*	font-family: SF Pro Text;*/
 }
+
 .site-header-inner {
     position: absolute;
 	width: 376px;
@@ -22,19 +43,15 @@
 	background-color: #eeeeee;
 }
 
+/*buttons*/
 .save-button{
 /* Buttons/save */
-
 position: absolute;
 width: 65px;
 height: 40px;
 left: 295px;
 top: 56px;
-
-
-
 /* Rectangle 30 */
-
 position: absolute;
 width: 65px;
 height: 40px;
@@ -43,10 +60,7 @@ top: 56px;
 
 background: #FFFFFF;
 border-radius: 32px;
-
-
 /* Save */
-
 position: absolute;
 width: 33px;
 height: 20px;
@@ -62,8 +76,72 @@ line-height: 20px;
 letter-spacing: -0.24px;
 
 color: #000000;
-
-
 }
 
+.createwall-button{
+	position: absolute;
+	width: 307px;
+	height: 90px;
+	left: 42px;
+	top: 348px;
+/*	padding: 10px*/
+	background-color: #C4C4C4;
+}
 
+.gallery-button{
+	position: absolute;
+	width: 307px;
+	height: 90px;
+	left: 42px;
+	top: 480px;
+	background-color: #C4C4C4;
+}
+
+.community-button{
+	position: absolute;
+	width: 307px;
+	height: 90px;
+	left: 42px;
+	top: 612px;
+	background-color: #C4C4C4;
+}
+
+/*icons*/
+.sticky-note{
+	position: absolute;
+	width: 144px;
+	height: 144px;
+	left: 32px;
+	top: 245px;
+	background-color: C4C4C4;
+}
+
+.icon-addwall{
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	left: 16px;
+	top: 110px;
+	background-color: C4C4C4;
+	border: 1px solid #000000;	
+}
+
+.icon-t{
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	left: 68px;
+	top: 110px;
+	background-color: C4C4C4;
+	border: 1px solid #000000;
+}
+
+.icon-dots{
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	left: 316px;
+	top: 110px;	
+	background-color: C4C4C4;
+	border: 1px solid #000000;
+}
