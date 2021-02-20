@@ -112,8 +112,10 @@ color: #000000;
 	width: 144px;
 	height: 144px;
 	left: 32px;
-	top: 245px;
-	background-color: C4C4C4;
+	top: 200px; 
+	background-color: #fdff9b;
+	margin: 20px;
+	
 }
 
 .icon-addwall{

@@ -120,6 +120,16 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
       $parent.trigger('closed.bs.alert').remove()
     }
 
+
+
+
+
+
+
+
+
+    
+
     $.support.transition && $parent.hasClass('fade') ?
       $parent
         .one($.support.transition.end, removeElement)

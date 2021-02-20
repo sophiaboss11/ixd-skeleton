@@ -2,29 +2,103 @@ $(document).ready(function() {
     initializePage();
 });
 
-// function initializePage() {
-//    $('#testjs').click(function(e) {
-//            $('.jumbotron h1').text("Javascript is connected");
-//            });
+var x;
+var y; 
+var countNote;
 
-//    $("a.thumbnail").click(projectClick);
+// function addNotes(){
+//    //activate function. while active, if recieve tap, get location of tap and add note to that area.
+//    var isActive = false;
+//    var txt1 = "<p>add a note</p>";
+//     countNote ++;
 
-// }
-// function projectClick(e) {
-//    // prevent the page from reloading     
-//    e.preventDefault();
-//    // In an event handler, $(this) refers to     
-//    // the object that triggered the event     
-//    $(this).css("background-color", "#7fff00");
+//     if(isActive = false){
+//         tapLocation();
+//         isActive = true;
+//     }
+
+//     if(isActive= true){
+//         //activate tap location
+//         //tapLocation();
+//         x = 100;
+//         y = 100;
+        
+//         //change note location
+//         //document.getElementById('tId').style.width = "30%";
+//         document.getElementById("note1").style.left = x;
+//         document.getElementById("note1").style.top = y;
+//         //create element to append to??
+//        $("body").append(note1); 
+//     //    var word = "word";
+//     //    $("button").after(word); 
+    
+//     }
+    
+//     console.log("add notes called");
 // }
 
 function addNotes(){
-    //var test = "stickynote";
-    var running = $("<p></p>").text("StickyNote"); 
+   //activate function. while active, if recieve tap, get location of tap and add note to that area.
+   var isActive = false;
+   var txt1 = "<p>add a note</p>";
+    countNote ++;
 
-    $("button").after(running);
+    if(isActive = false){
+        tapLocation();
+        isActive = true;
+    }
+
+    if(isActive= true){
+        //activate tap location
+        //tapLocation();
+        x = 100;
+        y = 100;
+        
+        //change note location
+        //document.getElementById('tId').style.width = "30%";
+        document.getElementById("#note1").style.left = x;
+        document.getElementById("#note1").style.top = y;
+        //create element to append to??
+       $("body").append(note1); 
+    //    var word = "word";
+    //    $("button").after(word); 
+    
+    }
+    
     console.log("add notes called");
 }
+
+function addNotes2(){
+    var n = document.createElement('div');
+    n.className = 'sticky-note';
+
+    console.log("add notes called");
+}
+
+function tapLocation(){
+    //return tap location
+    x = MouseEvent.clientX;
+    y = MouseEvent.clientY;
+    //return x;
+    console.log("tapLocation() called");
+}
+
+function removeNotes(){
+    //$("button").click(function(){
+    $(this).hide();
+    //});
+    console.log("removeNotes() called");
+}
+
+$( function() {
+    $( "#draggable").draggable({
+        cursor: "grabbing",
+        opacity: 0.5,
+        //grid:[300,300],
+        snap: true,
+        snapTolerance: 30
+    });
+  } );
 
 
 

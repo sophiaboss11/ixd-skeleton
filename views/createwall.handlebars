@@ -14,21 +14,23 @@
 <body>
 
 <script src="https://code.jquery.com/jquery.js"></script>
-{{!-- <script src="js/jquery-1.11.0.js"></script> --}}
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/introHCI.js"></script> 
-
 <script src="js/wallfunctions.js"></script> 
-<div class = "bg">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<div class = "bg" >
     <div class = "site-header-outer">
         <h4>unnamed</h4>    
     </div>
     <div class = "site-header-inner"></div>
     <a class = "save-button">save</a>
-    <button class = "icon-addwall" id = "adding" onclick="addNotes()">+</button>
+    <button class = "icon-addwall" id = "adding" onclick="addNotes2()">+</button>
     <button class = "icon-t">T</button>
     <button class = "icon-dots">...</button>
+    <div class = "sticky-note" id = "draggable" >New Note</div>
 
 </div>
 </body>
